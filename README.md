@@ -44,7 +44,7 @@ The Turing Matrix editor and card build on ideas and code from **Tom Whitwell** 
 
 ## Hosting
 
-If this repo is published with GitHub Pages, the editor will be available at:
+The editor is available at:
 
 `https://soveda.github.io/Turing_Matrix_Editor/web`
 
