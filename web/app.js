@@ -121,7 +121,7 @@ function friendlyMidiError(error) {
 }
 
 function formatBytes(data) {
-  return [...data].map((value) => value.toString(16).padStart(2, "0")).join(" ");
+  return Array.from(data || []).map((value) => value.toString(16).padStart(2, "0")).join(" ");
 }
 
 function scorePort(port) {
@@ -140,7 +140,7 @@ function selectPreferredPort(ports, previousId) {
       return exact;
     }
   }
-  return [...ports].sort((a, b) => scorePort(b) - scorePort(a))[0] || null;
+  return Array.from(ports || []).sort((a, b) => scorePort(b) - scorePort(a))[0] || null;
 }
 
 function bindRangePair(rangeId, numberId) {
