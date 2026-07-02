@@ -24,7 +24,7 @@ front-panel controls.
 
 ## Using it
 
-1. Open the editor in a browser with Web MIDI support.
+1. Open the HTTPS-hosted editor in desktop Chrome or Edge.
 2. Connect the card.
 3. Read the current settings from the card.
 4. Change the settings in the form.
@@ -32,7 +32,11 @@ front-panel controls.
 
 ## Notes
 
-- Chrome is recommended.
+- Desktop Chrome or Edge is required. Web MIDI/SysEx is not supported reliably on iOS or Safari.
+- Android MIDI support varies by device, cable/OTG adapter, and hub. Connect the card before opening the page and use a powered hub if detection is unreliable.
+- The editor remembers only the selected colour theme. Settings remain local until **Send To Card** is pressed; the card stores successfully sent settings.
+- **Load Defaults** changes the form locally and never overwrites the card until **Send To Card** is pressed.
+- Open **Developer diagnostics** to inspect input/output ports and recent MIDI events after a failure. It is hidden during normal use and its log can be cleared.
 - `Z middle` is the Turing layer.
 - `Z up` is the mixer layer.
 - `Z down` remains tap tempo.
